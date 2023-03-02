@@ -1,0 +1,63 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/ubuntu
+{
+	"name": "Web & Database Computing",
+	"image": "ghcr.io/uadelaide/wdc23:latest",
+
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	// "features": {},
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	"forwardPorts": [8080],
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "uname -a",
+
+	// Configure tool-specific properties.
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"html-validate.vscode-html-validate",
+				"dbaeumer.vscode-eslint",
+				"vsls-contrib.gitdoc",
+				"ms-vsliveshare.vsliveshare-pack"
+			]
+		}
+	},
+
+	// Force AMD64 architecture
+	"runArgs": ["--platform=linux/amd64" ],
+
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	"remoteUser": "root",
+
+	// Default settings
+	"settings": {
+		"extension-uninstaller.uninstall": [
+		  "github.copilot",
+		  "github.copilot-nightly",
+		  "tabnine.tabnine-vscode"
+		],
+		"extensions.ignoreRecommendations": true,
+		"files.autoSave": "afterDelay",
+		"files.exclude": {
+		  "**/.*": true
+		},
+		"files.trimTrailingWhitespace": true,
+		"files.watcherExclude": {
+		  "**/.git/objects/**": true,
+		  "**/.git/subtree-cache/**": true,
+		  "**/node_modules/*/**": true
+		},
+		"git.autofetch": true,
+		"gitdoc.autoPull": "off",
+		"gitdoc.commitMessageFormat": "DD, TTT",
+		"gitdoc.commitValidationLevel": "none",
+		"gitdoc.enabled": true,
+		"gitdoc.pullOnOpen": false,
+		"html.suggest.html5": false,
+		"javascript.suggest.enabled": false,
+		"terminal.integrated.defaultProfile.linux": "bash"
+	}
+
+}

@@ -1,0 +1,13 @@
+{
+    "extends": ["html-validate:standard"],
+    "rules": {
+        "doctype-style": "error",
+        "empty-heading": "error",
+        "empty-title": "error",
+        "missing-doctype": "error",
+        "no-dup-class": "error",
+        "no-implicit-close": "error",
+        "script-element": "error",
+        "wcag/h37": "error"
+      }
+}

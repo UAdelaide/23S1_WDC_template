@@ -20,7 +20,8 @@
 				"html-validate.vscode-html-validate",
 				"dbaeumer.vscode-eslint",
 				"vsls-contrib.gitdoc",
-				"ms-vsliveshare.vsliveshare-pack"
+				"ms-vsliveshare.vsliveshare-pack",
+				"tonybaloney.vscode-pets"
 			]
 		}
 	},
@@ -53,10 +54,8 @@
 		"gitdoc.autoPull": "off",
 		"gitdoc.commitMessageFormat": "DD, TTT",
 		"gitdoc.commitValidationLevel": "none",
-		"gitdoc.enabled": true,
+		"gitdoc.enabled": false,
 		"gitdoc.pullOnOpen": false,
-		"html.suggest.html5": false,
-		"javascript.suggest.enabled": false,
 		"terminal.integrated.defaultProfile.linux": "bash"
 	}
 

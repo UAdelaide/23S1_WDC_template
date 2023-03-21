@@ -21,7 +21,8 @@
 				"dbaeumer.vscode-eslint",
 				"vsls-contrib.gitdoc",
 				"ms-vsliveshare.vsliveshare-pack",
-				"tonybaloney.vscode-pets"
+				"tonybaloney.vscode-pets",
+				"unjinjang.rest-api-client"
 			]
 		}
 	},
